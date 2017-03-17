@@ -42,7 +42,7 @@ public class App {
     int calculateNow = Integer.parseInt(calculateNowInput);
     Integer estimateResult = event.initialEstimate(calculateNow, event.isEvent(guests), event.typeOfFood(type), event.extraForAlcohol(bar), event.extraForEntertainment(ent));
       if (coupon == 1) {
-        Float newResult = estimateResult \ 10;
+        Double newResult = (double)estimateResult * 0.9;
         System.out.println("The price for your party is: $" + newResult);
         System.out.println("You saved 10 percent");
       } else {
