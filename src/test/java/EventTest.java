@@ -3,38 +3,38 @@ import static org.junit.Assert.*;
 
 public class EventTest {
   @Test
-  public void isEvent_forNumberOfGuests_1600() {
+  public void isEvent_forNumberOfGuests_16() {
     Event event = new Event();
-    Integer cost = 1600;
+    Integer cost = 16;
     assertEquals(cost, event.isEvent(1));
    }
 
    @Test
-   public void typeOfFood_extraPerHeadForTypeOfFood_500() {
+   public void typeOfFood_extraPerHeadForTypeOfFood_5() {
      Event event = new Event();
-     Integer costOfFood = 500;
-     assertEquals(costOfFood, event.typeOfFood(3));
+     Integer costOfFood = 5;
+     assertEquals(costOfFood, event.typeOfFood(4));
     }
 
     @Test
-    public void fullBar_extraPerHeadForAlcohol_1000() {
+    public void fullBar_extraPerHeadForAlcohol_10() {
       Event event = new Event();
-      Integer costOfAlcohol = 1000;
-      assertEquals(costOfAlcohol, event.extraForAlcohol(true));
+      Integer costOfAlcohol = 10;
+      assertEquals(costOfAlcohol, event.extraForAlcohol(1));
     }
 
     @Test
-    public void typeOfEntertainment_extraForTypeOfEntertainment_30000() {
+    public void typeOfEntertainment_extraForTypeOfEntertainment_300() {
       Event event = new Event();
-      Integer costOfEntertainment = 30000;
+      Integer costOfEntertainment = 300;
       assertEquals(costOfEntertainment, event.extraForEntertainment(1));
     }
 
     @Test
-    public void initialEstimate_addCostsOfAllChoices_322() {
+    public void initialEstimate_addCostsOfAllChoices_331() {
       Event event = new Event();
-      Integer initialEstimate = 322;
-      assertEquals(initialEstimate, event.initialEstimate(1, 1600, 100, 500, 30000));
+      Integer initialEstimate = 331;
+      assertEquals(initialEstimate, event.initialEstimate(1, 16, 10, 5, 300));
     }
 
 }

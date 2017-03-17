@@ -21,7 +21,7 @@ public class App {
     int bar = Integer.parseInt(barInput);
     System.out.println("Question 4: Do you need entertainment?");
     System.out.println("Please respond with the appropriate NUMBER");
-    System.out.println("0: No, 1: Carl the Comedian, 2: Chamber Music, 3: Rock n Roll, 4: Jazz, 5: Marty the Mitzvah MC");
+    System.out.println("1: Carl the Comedian, 2: Chamber Music, 3: Rock n Roll, 4: Jazz, 5: Marty the Mitzvah MC 6: None");
     String entInput = myConsole.readLine();
     int ent = Integer.parseInt(entInput);
     System.out.println("Question 5: Are you ready to calculate your estimate?");
@@ -29,7 +29,6 @@ public class App {
     System.out.println("1: Yes, 2: No");
     String calculateNowInput = myConsole.readLine();
     int calculateNow = Integer.parseInt(calculateNowInput);
-
     Integer estimateResult = event.initialEstimate(calculateNow, event.isEvent(guests), event.typeOfFood(type), event.extraForAlcohol(bar), event.extraForEntertainment(ent));
     System.out.println("The price for your party is: $" + estimateResult);
   }

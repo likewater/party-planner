@@ -18,7 +18,7 @@
 | One party guest at base price. | 1 | 16 |
 | Add additional cost of dining types per guest. | breakfast, lunch, dinner, fine dining | 0, 0, 2, 5 |
 | Add additional cost of full bar per guest. | 1 | 10 |
-| Add additional cost of entertainment to entire party. | comedian, chamber group, rock, jazz, mitvah mc, none| 300, 1200, 1500, 1000, 700, 0 |
+| Add additional cost of entertainment to entire party. | comedian, chamber group, rock, jazz, mitzvah mc, none| 300, 1200, 1500, 1000, 700, 0 |
 | Add above applicable costs. | all relevant costs | estimate |
 
 ###This is the initial release (1.0).
