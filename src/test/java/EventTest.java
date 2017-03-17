@@ -34,7 +34,7 @@ public class EventTest {
     public void initialEstimate_addCostsOfAllChoices_322() {
       Event event = new Event();
       Integer initialEstimate = 322;
-      assertEquals(initialEstimate, event.initialEstimate(true, 1600, 100, 500, 30000));
+      assertEquals(initialEstimate, event.initialEstimate(1, 1600, 100, 500, 30000));
     }
 
 }

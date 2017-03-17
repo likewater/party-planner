@@ -23,8 +23,8 @@ public class Event {
     return costOfEntertainment;
   }
 
-  public Integer extraForAlcohol(boolean bar) {
-    if (bar == true) {
+  public Integer extraForAlcohol(int bar) {
+    if (bar == 1) {
       costOfAlcohol = 1000;
     } else {
       costOfAlcohol = 0;
@@ -50,8 +50,8 @@ public class Event {
     return cost;
   }
 
-  public Integer initialEstimate(boolean calculateNow, Integer cost, Integer costOfFood, Integer costOfAlcohol, Integer costOfEntertainment) {
-    if (calculateNow == true) {
+  public Integer initialEstimate(Integer calculateNow, Integer cost, Integer costOfFood, Integer costOfAlcohol, Integer costOfEntertainment) {
+    if (calculateNow == 1) {
     Integer multiplier = cost / 1600;
     initialEstimate = ((costOfFood + costOfAlcohol * multiplier) + cost + costOfEntertainment) / 100;
     }
