@@ -19,9 +19,15 @@ public class EventTest {
     @Test
     public void fullBar_extraPerHeadForAlcohol_true() {
       Event event = new Event();
-      Integer fullBar = 1000;
+      Integer costOfAlcohol = 1000;
       assertEquals(costOfAlcohol, event.extraForAlcohol(true));
     }
 
+    @Test
+    public void typeOfEntertainment_extraForTypeOfEntertainment_1() {
+      Event event = new Event();
+      Integer costOfEntertainment = 30000;
+      assertEquals(costOfEntertainment, event.extraForEntertainment(1));
+    }
 
 }
