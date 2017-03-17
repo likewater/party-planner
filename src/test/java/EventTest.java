@@ -30,4 +30,11 @@ public class EventTest {
       assertEquals(costOfEntertainment, event.extraForEntertainment(1));
     }
 
+    @Test
+    public void initialEstimate_addCostsOfAllChoices_331() {
+      Event event = new Event();
+      Integer initialEstimate = 0;
+      assertEquals(initialEstimate, event.initialEstimate(true));
+    }
+
 }

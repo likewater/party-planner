@@ -1,5 +1,6 @@
 public class Event {
 
+  Integer initialEstimate = 0;
   Integer costOfEntertainment = 0;
   Integer costOfAlcohol = 0;
   Integer costOfFood = 0;
@@ -36,6 +37,8 @@ public class Event {
       costOfFood = 500;
     } else if (type == 2) {
       costOfFood = 200;
+    } else if (type == 1) {
+      costOfFood = 100;
     } else {
       costOfFood = 0;
     }
@@ -45,5 +48,13 @@ public class Event {
   public Integer isEvent(int guests) {
     cost = 1600  * guests;
     return cost;
+  }
+
+  public Integer initialEstimate(boolean calculateNow) {
+    if (calculateNow == true) {
+    Integer multiplier = cost / 1600;
+    initialEstimate = ((costOfFood + costOfAlcohol * multiplier) + cost + costOfEntertainment) / 100;
+    }
+    return initialEstimate;
   }
 }
