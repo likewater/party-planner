@@ -30,14 +30,13 @@ public class App {
     System.out.println("1: Yes, 2: No");
     String couponInput = myConsole.readLine();
     int coupon = Integer.parseInt(couponInput);
-    System.out.println("Enter your coupon number!");
+    System.out.println("Enter your coupon number or enter 0");
     String couponNumberInput = myConsole.readLine();
     int couponNumber = Integer.parseInt(couponNumberInput);
     System.out.println("Question 6: Are you ready to calculate your estimate?");
     System.out.println("Please respond with the appropriate NUMBER");
     System.out.println("1: Yes, 2: No");
     String calculateNowInput = myConsole.readLine();
-
 //install coupon logic in front end
     int calculateNow = Integer.parseInt(calculateNowInput);
     Integer estimateResult = event.initialEstimate(calculateNow, event.isEvent(guests), event.typeOfFood(type), event.extraForAlcohol(bar), event.extraForEntertainment(ent));
