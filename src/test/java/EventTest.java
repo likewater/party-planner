@@ -8,4 +8,20 @@ public class EventTest {
     Integer cost = 1600;
     assertEquals(cost, event.isEvent(1));
    }
+
+   @Test
+   public void typeOfFood_extraPerHeadForTypeOfFood_500() {
+     Event event = new Event();
+     Integer costOfFood = 500;
+     assertEquals(costOfFood, event.typeOfFood(3));
+    }
+
+    @Test
+    public void fullBar_extraPerHeadForAlcohol_true() {
+      Event event = new Event();
+      Integer fullBar = 1000;
+      assertEquals(costOfAlcohol, event.extraForAlcohol(true));
+    }
+
+
 }
