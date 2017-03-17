@@ -1,8 +1,8 @@
 public class PartyPlanner {
 
-  public boolean isPartyPlanner(int year) {
+  public Integer isPartyPlanner(int guests) {
     // eventually put your code here
-    return false;
+    return 0;
   }
 
 }
