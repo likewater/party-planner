@@ -53,7 +53,7 @@ public class Event {
   public Integer initialEstimate(Integer calculateNow, Integer cost, Integer costOfFood, Integer costOfAlcohol, Integer costOfEntertainment) {
     if (calculateNow == 1) {
     Integer multiplier = cost / 16;
-    initialEstimate = ((costOfFood + costOfAlcohol * multiplier) + cost + costOfEntertainment);
+    initialEstimate = (((costOfFood + costOfAlcohol) * multiplier) + cost + costOfEntertainment);
     }
     return initialEstimate;
   }
