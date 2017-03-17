@@ -17,24 +17,24 @@ public class EventTest {
     }
 
     @Test
-    public void fullBar_extraPerHeadForAlcohol_true() {
+    public void fullBar_extraPerHeadForAlcohol_1000() {
       Event event = new Event();
       Integer costOfAlcohol = 1000;
       assertEquals(costOfAlcohol, event.extraForAlcohol(true));
     }
 
     @Test
-    public void typeOfEntertainment_extraForTypeOfEntertainment_1() {
+    public void typeOfEntertainment_extraForTypeOfEntertainment_30000() {
       Event event = new Event();
       Integer costOfEntertainment = 30000;
       assertEquals(costOfEntertainment, event.extraForEntertainment(1));
     }
 
     @Test
-    public void initialEstimate_addCostsOfAllChoices_331() {
+    public void initialEstimate_addCostsOfAllChoices_322() {
       Event event = new Event();
-      Integer initialEstimate = 0;
-      assertEquals(initialEstimate, event.initialEstimate(true));
+      Integer initialEstimate = 322;
+      assertEquals(initialEstimate, event.initialEstimate(true, 1600, 100, 500, 30000));
     }
 
 }

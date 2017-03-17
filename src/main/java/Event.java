@@ -50,7 +50,7 @@ public class Event {
     return cost;
   }
 
-  public Integer initialEstimate(boolean calculateNow) {
+  public Integer initialEstimate(boolean calculateNow, Integer cost, Integer costOfFood, Integer costOfAlcohol, Integer costOfEntertainment) {
     if (calculateNow == true) {
     Integer multiplier = cost / 1600;
     initialEstimate = ((costOfFood + costOfAlcohol * multiplier) + cost + costOfEntertainment) / 100;
