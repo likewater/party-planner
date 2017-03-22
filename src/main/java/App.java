@@ -10,8 +10,8 @@ public class App {
     String guestsInput = myConsole.readLine();
     int guests = Integer.parseInt(guestsInput);
     System.out.println("Question 2: What basic kind of meal do you want?");
-    System.out.println("1: Breakfast, 2: Lunch, 3: Dinner, 4: Fine Dining, 5: Light Snacks");
     System.out.println("Please respond with the appropriate NUMBER");
+    System.out.println("1: Breakfast, 2: Lunch, 3: Dinner, 4: Fine Dining, 5: Light Snacks");
     String typeInput = myConsole.readLine();
     int type = Integer.parseInt(typeInput);
     System.out.println("Question 3: Does your party need a Full Bar?");
@@ -24,7 +24,7 @@ public class App {
     System.out.println("1: Carl the Comedian, 2: Chamber Music, 3: Rock n Roll, 4: Jazz, 5: Marty the Mitzvah MC 6: None");
     String entInput = myConsole.readLine();
     int ent = Integer.parseInt(entInput);
-//add coupon price reduction message here 
+//add coupon price reduction message here
     System.out.println("Question 5: Do you have a coupon?");
     System.out.println("Please respond with the appropriate NUMBER");
     System.out.println("1: Yes, 2: No");

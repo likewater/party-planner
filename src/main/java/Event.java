@@ -5,7 +5,7 @@ public class Event {
   private Integer mCostOfAlcohol = 0;
   private Integer mCostOfFood = 0;
   private Integer mCost = 0;
-  //private Integer mInitialEstimate = 0;
+  
   public Integer getExtraForEntertainment(int ent) {
     if (ent == 1) {
       mCostOfEntertainment = 300;
