@@ -1,11 +1,19 @@
 public class Event {
-
+  //Member Variables
   Private Integer mInitialEstimate = 0;
   Private Integer mCostOfEntertainment = 0;
   Private Integer mCostOfAlcohol = 0;
   Private Integer mCostOfFood = 0;
   Private Integer mCost = 0;
-
+  //Constructor
+  public Event(int initialEstimate, int costOfEntertainment, int costOfAlcohol, int costOfFood, int cost) {
+    mInitialEstimate = initialEstimate;
+    mCostOfEntertainment = costOfEntertainment;
+    mCostOfAlcohol = costOfAlcohol;
+    mCostOfFood = costOfFood;
+    mCost = cost;
+  }
+  
   public Integer extraForEntertainment(int ent) {
     if (ent == 1) {
       costOfEntertainment = 300;
