@@ -13,8 +13,8 @@ public class Event {
     mCostOfFood = costOfFood;
     mCost = cost;
   }
-  
-  public Integer extraForEntertainment(int ent) {
+
+  public Integer getExtraForEntertainment(int ent) {
     if (ent == 1) {
       costOfEntertainment = 300;
     } else if (ent == 2) {
@@ -31,7 +31,7 @@ public class Event {
     return costOfEntertainment;
   }
 
-  public Integer extraForAlcohol(int bar) {
+  public Integer getExtraForAlcohol(int bar) {
     if (bar == 1) {
       costOfAlcohol = 10;
     } else {
@@ -40,7 +40,7 @@ public class Event {
     return costOfAlcohol;
   }
 
-  public Integer typeOfFood(int type) {
+  public Integer getTypeOfFood(int type) {
     if (type == 4) {
       costOfFood = 5;
     } else if (type == 3) {
@@ -53,12 +53,12 @@ public class Event {
     return costOfFood;
   }
 
-  public Integer isEvent(int guests) {
+  public Integer getIsEvent(int guests) {
     cost = 16 * guests;
     return cost;
   }
 
-  public Integer initialEstimate(Integer calculateNow, Integer cost, Integer costOfFood, Integer costOfAlcohol, Integer costOfEntertainment) {
+  public Integer getInitialEstimate(Integer calculateNow, Integer cost, Integer costOfFood, Integer costOfAlcohol, Integer costOfEntertainment) {
     if (calculateNow == 1) {
     Integer multiplier = cost / 16;
     initialEstimate = (((costOfFood + costOfAlcohol) * multiplier) + cost + costOfEntertainment);
