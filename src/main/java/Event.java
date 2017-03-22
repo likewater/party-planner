@@ -5,15 +5,7 @@ public class Event {
   private Integer mCostOfAlcohol = 0;
   private Integer mCostOfFood = 0;
   private Integer mCost = 0;
-  //Constructor
-  public Event(int initialEstimate, int costOfEntertainment, int costOfAlcohol, int costOfFood, int cost) {
-    mInitialEstimate = initialEstimate;
-    mCostOfEntertainment = costOfEntertainment;
-    mCostOfAlcohol = costOfAlcohol;
-    mCostOfFood = costOfFood;
-    mCost = cost;
-  }
-
+  //private Integer mInitialEstimate = 0;
   public Integer getExtraForEntertainment(int ent) {
     if (ent == 1) {
       mCostOfEntertainment = 300;
@@ -58,11 +50,11 @@ public class Event {
     return mCost;
   }
 
-  public Integer getInitialEstimate(Integer calculateNow, Integer cost, Integer costOfFood, Integer costOfAlcohol, Integer costOfEntertainment) {
+  public Integer getInitialEstimate(Integer calculateNow, Integer mCost, Integer mCostOfFood, Integer mCostOfAlcohol, Integer mCostOfEntertainment) {
     if (calculateNow == 1) {
-    Integer multiplier = cost / 16;
-    initialEstimate = (((costOfFood + costOfAlcohol) * multiplier) + cost + costOfEntertainment);
+    Integer multiplier = mCost / 16;
+    mInitialEstimate = (((mCostOfFood + mCostOfAlcohol) * multiplier) + mCost + mCostOfEntertainment);
     }
-    return initialEstimate;
+    return mInitialEstimate;
   }
 }

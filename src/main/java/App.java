@@ -24,7 +24,7 @@ public class App {
     System.out.println("1: Carl the Comedian, 2: Chamber Music, 3: Rock n Roll, 4: Jazz, 5: Marty the Mitzvah MC 6: None");
     String entInput = myConsole.readLine();
     int ent = Integer.parseInt(entInput);
-//add coupon price reduction message here
+//add coupon price reduction message here 
     System.out.println("Question 5: Do you have a coupon?");
     System.out.println("Please respond with the appropriate NUMBER");
     System.out.println("1: Yes, 2: No");
@@ -39,7 +39,7 @@ public class App {
     String calculateNowInput = myConsole.readLine();
 //install coupon logic in front end
     int calculateNow = Integer.parseInt(calculateNowInput);
-    Integer estimateResult = event.initialEstimate(calculateNow, event.isEvent(guests), event.typeOfFood(type), event.extraForAlcohol(bar), event.extraForEntertainment(ent));
+    Integer estimateResult = event.getInitialEstimate(calculateNow, event.getIsEvent(guests), event.getTypeOfFood(type), event.getExtraForAlcohol(bar), event.getExtraForEntertainment(ent));
       if (coupon == 1) {
         Double newResult = (double)estimateResult * 0.9;
         System.out.println("The price for your party is: $" + newResult);
