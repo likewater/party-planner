@@ -21,9 +21,9 @@
 | Add additional cost of entertainment to entire party. | comedian, chamber group, rock, jazz, mitzvah mc, none| 300, 1200, 1500, 1000, 700, 0 |
 | Add above applicable costs. | all relevant costs | estimate |
 
-###This is the initial release (1.0).
+### This is the initial release (1.0).
 
-#Built with the following tools:
+# Built with the following tools:
 
 * Atom (https://atom.io/)
 * GitHub (https://github.com/)
@@ -31,6 +31,6 @@
 * jUnit (http://junit.org/junit4/)
 * Gradle (https://gradle.org/)
 
-###This project is licensed under the MIT License - [license]
+### This project is licensed under the MIT License - [license]
 
 [license]: https://opensource.org/licenses/MIT
