@@ -1,10 +1,10 @@
 public class Event {
   //Member Variables
-  Private Integer mInitialEstimate = 0;
-  Private Integer mCostOfEntertainment = 0;
-  Private Integer mCostOfAlcohol = 0;
-  Private Integer mCostOfFood = 0;
-  Private Integer mCost = 0;
+  private Integer mInitialEstimate = 0;
+  private Integer mCostOfEntertainment = 0;
+  private Integer mCostOfAlcohol = 0;
+  private Integer mCostOfFood = 0;
+  private Integer mCost = 0;
   //Constructor
   public Event(int initialEstimate, int costOfEntertainment, int costOfAlcohol, int costOfFood, int cost) {
     mInitialEstimate = initialEstimate;
@@ -16,46 +16,46 @@ public class Event {
 
   public Integer getExtraForEntertainment(int ent) {
     if (ent == 1) {
-      costOfEntertainment = 300;
+      mCostOfEntertainment = 300;
     } else if (ent == 2) {
-      costOfEntertainment = 1200;
+      mCostOfEntertainment = 1200;
     } else if (ent == 3) {
-      costOfEntertainment = 1500;
+      mCostOfEntertainment = 1500;
     } else if (ent == 4) {
-      costOfEntertainment = 1000;
+      mCostOfEntertainment = 1000;
     } else if (ent == 5) {
-      costOfEntertainment = 700;
+      mCostOfEntertainment = 700;
     } else {
-      costOfEntertainment = 0;
+      mCostOfEntertainment = 0;
     }
-    return costOfEntertainment;
+    return mCostOfEntertainment;
   }
 
   public Integer getExtraForAlcohol(int bar) {
     if (bar == 1) {
-      costOfAlcohol = 10;
+      mCostOfAlcohol = 10;
     } else {
-      costOfAlcohol = 0;
+      mCostOfAlcohol = 0;
     }
-    return costOfAlcohol;
+    return mCostOfAlcohol;
   }
 
   public Integer getTypeOfFood(int type) {
     if (type == 4) {
-      costOfFood = 5;
+      mCostOfFood = 5;
     } else if (type == 3) {
-      costOfFood = 2;
+      mCostOfFood = 2;
     } else if (type == 2) {
-      costOfFood = 1;
+      mCostOfFood = 1;
     } else {
-      costOfFood = 0;
+      mCostOfFood = 0;
     }
-    return costOfFood;
+    return mCostOfFood;
   }
 
   public Integer getIsEvent(int guests) {
-    cost = 16 * guests;
-    return cost;
+    mCost = 16 * guests;
+    return mCost;
   }
 
   public Integer getInitialEstimate(Integer calculateNow, Integer cost, Integer costOfFood, Integer costOfAlcohol, Integer costOfEntertainment) {
