@@ -1,10 +1,10 @@
 public class Event {
 
-  Integer initialEstimate = 0;
-  Integer costOfEntertainment = 0;
-  Integer costOfAlcohol = 0;
-  Integer costOfFood = 0;
-  Integer cost = 0;
+  Private Integer initialEstimate = 0;
+  Private Integer costOfEntertainment = 0;
+  Private Integer costOfAlcohol = 0;
+  Private Integer costOfFood = 0;
+  Private Integer cost = 0;
 
   public Integer extraForEntertainment(int ent) {
     if (ent == 1) {
